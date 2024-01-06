@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CvEntityModelStoreContainer" CdmEntityContainer="CvEntityEntities">
+    <EntitySetMapping Name="TBL_ABOUT">
+      <EntityTypeMapping TypeName="CvEntityModel.TBL_ABOUT">
+        <MappingFragment StoreEntitySet="TBL_ABOUT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="INFORMATIONS" ColumnName="INFORMATIONS" />
+          <ScalarProperty Name="EDUCATİON" ColumnName="EDUCATİON" />
+          <ScalarProperty Name="JOB" ColumnName="JOB" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_ADDRESS">
+      <EntityTypeMapping TypeName="CvEntityModel.TBL_ADDRESS">
+        <MappingFragment StoreEntitySet="TBL_ADDRESS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TELEPHONE" ColumnName="TELEPHONE" />
+          <ScalarProperty Name="MAİL" ColumnName="MAİL" />
+          <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+          <ScalarProperty Name="LOCASYON" ColumnName="LOCASYON" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_COMMUNICATİON">
+      <EntityTypeMapping TypeName="CvEntityModel.TBL_COMMUNICATİON">
+        <MappingFragment StoreEntitySet="TBL_COMMUNICATİON">
+          <ScalarProperty Name="KONU" ColumnName="KONU" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAMESURNAME" ColumnName="NAMESURNAME" />
+          <ScalarProperty Name="MAİL" ColumnName="MAİL" />
+          <ScalarProperty Name="MESSAGE" ColumnName="MESSAGE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_MYWORKS">
+      <EntityTypeMapping TypeName="CvEntityModel.TBL_MYWORKS">
+        <MappingFragment StoreEntitySet="TBL_MYWORKS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_SKILS">
+      <EntityTypeMapping TypeName="CvEntityModel.TBL_SKILS">
+        <MappingFragment StoreEntitySet="TBL_SKILS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SKILS" ColumnName="SKILS" />
+          <ScalarProperty Name="DEGREE" ColumnName="DEGREE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_ADMİN">
+      <EntityTypeMapping TypeName="CvEntityModel.TBL_ADMİN">
+        <MappingFragment StoreEntitySet="TBL_ADMİN">
+          <ScalarProperty Name="Pasword" ColumnName="Pasword" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
