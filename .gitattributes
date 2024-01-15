@@ -1,0 +1,6 @@
+*.txt linguist-language=tr
+
+*.jpg binary
+*.png binary
+
+.DS_Store export-ignore

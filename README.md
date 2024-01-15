@@ -1,7 +1,11 @@
-# CV ENTITY PROJECT
-This is a web form project built with Entity Framework.  
+# CV PROJESİ
 
-This project is created to showcase all of your skills.
-You can display your educational background, skills in the field you work,
-work experiences, blog posts, abilities, and relevant certifications here.  
+Entity Framework ile oluşturulmuş bir web form projesidir.
+
+## Projenin Amacı
+Bu proje tüm becerilerinizi sergilemek için oluşturuldu. Eğitim geçmişinizi, çalıştığınız alandaki becerilerinizi, iş deneyimlerinizi, blog yazılarınızı, yeteneklerinizi ve ilgili sertifikalarınızı burada görüntüleyebilirsiniz. 
+
+## Genel Bakış  
+
+![CV_Site - Google Chrome 2024-01-15 22-01-12](https://github.com/Fatmaaktar/CvEntity/assets/106100226/87798d8c-56ea-4c54-aae2-14604535b7f4)  
 
