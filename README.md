@@ -1,4 +1,4 @@
-# CV PROJESİ
+# Asp .NET Entity Framework Linq ile Dinamik CV Sitesi
 
 Entity Framework ile oluşturulmuş bir web form projesidir.
 
@@ -13,8 +13,8 @@ Bu proje tüm becerilerinizi sergilemek için oluşturuldu. Eğitim geçmişiniz
 
 ## Kullanım  
 Projeyi localinize kurduktan sonra Admin Giriş sayfasından giriş yapıp değişiklik yapabilirsiniz.  
-Kullanıcı Adı:a  
-Şifre:1  
+Kullanıcı Adı: a  
+Şifre: 1  
 
 **Veri Taban Yedeği**  [CvEntity](CvEntity.bak)  
 
