@@ -3,7 +3,7 @@
 Entity Framework ile oluşturulmuş bir web form projesidir.
 
 ## Projenin Amacı
-Bu proje tüm becerilerinizi sergilemek için oluşturuldu. Eğitim geçmişinizi, çalıştığınız alandaki becerilerinizi, iş deneyimlerinizi, blog yazılarınızı, yeteneklerinizi ve ilgili sertifikalarınızı burada görüntüleyebilirsiniz. 
+Bu proje tüm becerilerinizi sergilemek için oluşturuldu. Eğitim geçmişinizi, çalıştığınız alandaki becerilerinizi, iş deneyimlerinizi, projelerinizi, yeteneklerinizi ve ilgili sertifikalarınızı burada görüntüleyebilirsiniz. 
 
 ## Genel Bakış  
 
