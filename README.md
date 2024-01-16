@@ -17,7 +17,5 @@ Kullanıcı Adı: a
 Şifre: 1  
 
 
-🛢 **Veri Taban Yedeği**  [CvEntity](CvEntity.bak)  
-
 
 
