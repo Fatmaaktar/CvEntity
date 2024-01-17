@@ -8,6 +8,7 @@
     <Property Name="INFORMATIONS" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
     <Property Name="EDUCATİON" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
     <Property Name="JOB" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="EDUCATION" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="TBL_ADDRESS">
     <Key>
@@ -18,6 +19,7 @@
     <Property Name="MAİL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="ADDRESS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="LOCASYON" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="MAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="TBL_COMMUNICATİON">
     <Key>
@@ -28,13 +30,16 @@
     <Property Name="MAİL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="MESSAGE" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
     <Property Name="KONU" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TOPİC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="TBL_MYWORKS">
     <Key>
       <PropertyRef Name="ID" />
     </Key>
     <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="ADDRESS" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ADDRESS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IMAGE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NOTE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="TBL_SKILS">
     <Key>
@@ -51,6 +56,10 @@
     <EntitySet Name="TBL_MYWORKS" EntityType="Self.TBL_MYWORKS" />
     <EntitySet Name="TBL_SKILS" EntityType="Self.TBL_SKILS" />
     <EntitySet Name="TBL_ADMİN" EntityType="CvEntityModel.TBL_ADMİN" />
+    <EntitySet Name="TBL_CERTIFICATES" EntityType="CvEntityModel.TBL_CERTIFICATES" />
+    <EntitySet Name="TBL_ICON" EntityType="CvEntityModel.TBL_ICON" />
+    <EntitySet Name="TBL_ADMIN" EntityType="CvEntityModel.TBL_ADMIN" />
+    <EntitySet Name="TBL_COMMUNICATION" EntityType="CvEntityModel.TBL_COMMUNICATION" />
   </EntityContainer>
   <EntityType Name="TBL_ADMİN">
     <Key>
@@ -59,5 +68,42 @@
     <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="UserName" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
     <Property Name="Pasword" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TBL_CERTIFICATES">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ORGANİZATİON" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ORGANIZATION" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBL_ICON">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ICON" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LINK" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBL_ADMIN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Pasword" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TBL_COMMUNICATION">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NAMESURNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MAİL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MESSAGE" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="TOPİC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TOPIC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
   </EntityType>
 </Schema>

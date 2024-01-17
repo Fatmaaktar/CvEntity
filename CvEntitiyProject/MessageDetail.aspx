@@ -7,7 +7,7 @@
     <br />
     <asp:TextBox ID="TxtMail" runat="server" CssClass="form-control" Enabled="false"></asp:TextBox>
     <br />
-    <asp:TextBox ID="TxtKonu" runat="server" CssClass="form-control" Enabled="false"></asp:TextBox>
+    <asp:TextBox ID="TxtTopic" runat="server" CssClass="form-control" Enabled="false"></asp:TextBox>
      <br />
     <asp:TextBox ID="TxtMessage" runat="server" CssClass="form-control" Height="100" Enabled="false"></asp:TextBox>
    

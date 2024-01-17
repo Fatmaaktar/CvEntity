@@ -11,12 +11,15 @@ namespace CvEntitiyProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
 
+            }
         }
-        CvEntityEntities db = new CvEntityEntities();
+        CvEntityEntities1 db = new CvEntityEntities1();
         protected void Button1_Click(object sender, EventArgs e)
         {
-            var entr = from x in db.TBL_ADMİN
+            var entr = from x in db.TBL_ADMIN
                        where x.UserName == TextBox1.Text &&
                        x.Pasword == TextBox2.Text
                        select x;
@@ -26,8 +29,9 @@ namespace CvEntitiyProject
             }
             else
             {
-                Response.Write("Hatalı Kullanıcı Adı veya Şifre");
+                throw new UnauthorizedAccessException("Hatalı Kullanıcı Adı veya Şifre");
             }
+
         }
     }
 }

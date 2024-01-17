@@ -33,13 +33,13 @@ namespace CvEntitiyProject
         protected global::System.Web.UI.WebControls.TextBox TxtMail;
 
         /// <summary>
-        /// TxtKonu control.
+        /// TxtTopic control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtKonu;
+        protected global::System.Web.UI.WebControls.TextBox TxtTopic;
 
         /// <summary>
         /// TxtMessage control.

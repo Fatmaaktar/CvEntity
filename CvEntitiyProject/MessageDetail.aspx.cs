@@ -11,12 +11,12 @@ namespace CvEntitiyProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            CvEntityEntities db = new CvEntityEntities();
+            CvEntityEntities1 db = new CvEntityEntities1();
             int x = int.Parse(Request.QueryString["ID"]);
-            var message = db.TBL_COMMUNICATİON.Find(x);
+            var message = db.TBL_COMMUNICATION.Find(x);
             TxtNameSurname.Text = message.NAMESURNAME;
-            TxtMail.Text = message.MAİL;
-            TxtKonu.Text = message.KONU;
+            TxtMail.Text = message.MAIL;
+            TxtTopic.Text = message.TOPIC;
             TxtMessage.Text = message.MESSAGE;
         }
     }

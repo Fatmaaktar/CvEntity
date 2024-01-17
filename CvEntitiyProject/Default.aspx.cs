@@ -7,9 +7,9 @@ using System.Web.UI.WebControls;
 
 namespace CvEntitiyProject
 {
-    public partial class Default : System.Web.UI.Page
+    public partial class Default : System.Web.UI.Page 
     {
-        CvEntityEntities db = new CvEntityEntities();
+        CvEntityEntities1 db = new CvEntityEntities1();
         protected void Page_Load(object sender, EventArgs e)
         {
             Repeater1.DataSource = db.TBL_ABOUT.ToList();
@@ -20,16 +20,22 @@ namespace CvEntitiyProject
             Repeater3.DataBind();
             Repeater4.DataSource = db.TBL_SKILS.ToList();
             Repeater4.DataBind();
+            Repeater5.DataSource = db.TBL_CERTIFICATES.ToList();
+            Repeater5.DataBind();
+            Repeater6.DataSource = db.TBL_ICON.OrderBy(ICON => ICON.ID).ToList();
+            Repeater6.DataBind();
+            Repeater7.DataSource = db.TBL_MYWORKS.OrderBy(IMAGE => IMAGE.ID).ToList();
+            Repeater7.DataBind();
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            TBL_COMMUNICATİON c = new TBL_COMMUNICATİON();
-            c.NAMESURNAME = TextBox1.Text;
-            c.MAİL = TextBox2.Text;
-            c.KONU = TextBox3.Text;
-            c.MESSAGE = TextBox4.Text;
-            db.TBL_COMMUNICATİON.Add(c);
+            TBL_COMMUNICATION co = new TBL_COMMUNICATION();
+            co.NAMESURNAME = TextBox1.Text;
+            co.MAIL = TextBox2.Text;
+            co.TOPIC = TextBox3.Text;
+            co.MESSAGE = TextBox4.Text;
+            db.TBL_COMMUNICATION.Add(co);
             db.SaveChanges();
         }
     }

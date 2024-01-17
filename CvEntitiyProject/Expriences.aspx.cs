@@ -11,7 +11,7 @@ namespace CvEntitiyProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            CvEntityEntities db = new CvEntityEntities();
+            CvEntityEntities1 db = new CvEntityEntities1();
             var experience = db.TBL_ABOUT.ToList();
             Repeater1.DataSource = experience;
             Repeater1.DataBind();

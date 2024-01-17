@@ -14,7 +14,7 @@
                 <tr>
                     <td><%#Eval("ID")%></td>
                     <td><%#Eval("INFORMATIONS")%></td>
-                    <td><%#Eval("EDUCATİON")%></td>
+                    <td><%#Eval("EDUCATION")%></td>
                     <td><%#Eval("JOB")%></td>
                       <td>
                         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# "ExprienceDelete.aspx?ID=" + Eval("ID")%>'

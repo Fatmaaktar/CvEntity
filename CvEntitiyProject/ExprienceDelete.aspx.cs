@@ -11,12 +11,12 @@ namespace CvEntitiyProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            CvEntityEntities db = new CvEntityEntities();
+            CvEntityEntities1 db = new CvEntityEntities1();
             int x = Convert.ToInt32(Request.QueryString["ID"]);
             var ex = db.TBL_ABOUT.Find(x);
             db.TBL_ABOUT.Remove(ex);
             db.SaveChanges();
-            Response.Redirect("Experiences.aspx");
+            Response.Redirect("Expriences.aspx");
         }
     }
 }

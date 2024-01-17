@@ -9,7 +9,7 @@ namespace CvEntitiyProject
 {
     public partial class WebForm5 : System.Web.UI.Page
     {
-        CvEntityEntities db = new CvEntityEntities();
+        CvEntityEntities1 db = new CvEntityEntities1();
         protected void Page_Load(object sender, EventArgs e)
         {
             int x = int.Parse(Request.QueryString["ID"]);

@@ -13,13 +13,11 @@ namespace CvEntitiyProject
         {
 
         }
-        CvEntityEntities db = new CvEntityEntities();
+        CvEntityEntities1 db = new CvEntityEntities1();
         protected void Button1_Click(object sender, EventArgs e)
         {
             TBL_ABOUT ex = new TBL_ABOUT();
-            ex.INFORMATIONS= TextBox1.Text;
-            ex.EDUCATİON= TextBox2.Text;
-            ex.JOB= TextBox3.Text;
+            ex.JOB= TextBox1.Text;
             db.TBL_ABOUT.Add(ex);
             db.SaveChanges();
             Response.Redirect("Expriences.aspx");

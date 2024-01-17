@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CvEntityModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="TBL_ABOUT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="INFORMATIONS" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="EDUCATION" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="JOB" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TBL_ADDRESS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TELEPHONE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="MAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ADDRESS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LOCASYON" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TBL_ADMIN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Pasword" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TBL_CERTIFICATES">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ORGANIZATION" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBL_COMMUNICATION">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NAMESURNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MESSAGE" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="TOPIC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TBL_ICON">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ICON" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LINK" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBL_MYWORKS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IMAGE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ADDRESS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NOTE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBL_SKILS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SKILS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DEGREE" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="CvEntityEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TBL_ABOUT" EntityType="Self.TBL_ABOUT" />
+    <EntitySet Name="TBL_ADDRESS" EntityType="Self.TBL_ADDRESS" />
+    <EntitySet Name="TBL_ADMIN" EntityType="Self.TBL_ADMIN" />
+    <EntitySet Name="TBL_CERTIFICATES" EntityType="Self.TBL_CERTIFICATES" />
+    <EntitySet Name="TBL_COMMUNICATION" EntityType="Self.TBL_COMMUNICATION" />
+    <EntitySet Name="TBL_ICON" EntityType="Self.TBL_ICON" />
+    <EntitySet Name="TBL_MYWORKS" EntityType="Self.TBL_MYWORKS" />
+    <EntitySet Name="TBL_SKILS" EntityType="Self.TBL_SKILS" />
+  </EntityContainer>
+</Schema>

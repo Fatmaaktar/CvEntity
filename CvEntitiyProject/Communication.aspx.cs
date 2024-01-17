@@ -11,8 +11,8 @@ namespace CvEntitiyProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            CvEntityEntities db = new CvEntityEntities();
-            var messages = db.TBL_COMMUNICATİON.ToList();
+            CvEntityEntities1 db = new CvEntityEntities1();
+            var messages = db.TBL_COMMUNICATION.ToList();
             Repeater1.DataSource = messages;
             Repeater1.DataBind();
         }

@@ -15,6 +15,8 @@ namespace CvEntitiyProject
     public partial class TBL_MYWORKS
     {
         public int ID { get; set; }
+        public string IMAGE { get; set; }
         public string ADDRESS { get; set; }
+        public string NOTE { get; set; }
     }
 }

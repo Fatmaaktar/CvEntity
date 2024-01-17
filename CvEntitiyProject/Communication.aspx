@@ -15,7 +15,7 @@
                 <tr>
                     <td><%#Eval("ID")%></td>
                     <td><%#Eval("NAMESURNAME")%></td>
-                    <td><%#Eval("MAİL")%></td>
+                    <td><%#Eval("MAIL")%></td>
                     <td><%#Eval("MESSAGE")%></td>
 
                     <td>

@@ -16,7 +16,7 @@ namespace CvEntitiyProject
     {
         public byte ID { get; set; }
         public string TELEPHONE { get; set; }
-        public string MAİL { get; set; }
+        public string MAIL { get; set; }
         public string ADDRESS { get; set; }
         public string LOCASYON { get; set; }
     }

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CvEntityModelStoreContainer" CdmEntityContainer="CvEntityEntities1">
+    <EntitySetMapping Name="TBL_ABOUT">
+      <EntityTypeMapping TypeName="CvEntityModel.TBL_ABOUT">
+        <MappingFragment StoreEntitySet="TBL_ABOUT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="INFORMATIONS" ColumnName="INFORMATIONS" />
+          <ScalarProperty Name="EDUCATION" ColumnName="EDUCATION" />
+          <ScalarProperty Name="JOB" ColumnName="JOB" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_ADDRESS">
+      <EntityTypeMapping TypeName="CvEntityModel.TBL_ADDRESS">
+        <MappingFragment StoreEntitySet="TBL_ADDRESS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TELEPHONE" ColumnName="TELEPHONE" />
+          <ScalarProperty Name="MAIL" ColumnName="MAIL" />
+          <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+          <ScalarProperty Name="LOCASYON" ColumnName="LOCASYON" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_ADMIN">
+      <EntityTypeMapping TypeName="CvEntityModel.TBL_ADMIN">
+        <MappingFragment StoreEntitySet="TBL_ADMIN">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Pasword" ColumnName="Pasword" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_CERTIFICATES">
+      <EntityTypeMapping TypeName="CvEntityModel.TBL_CERTIFICATES">
+        <MappingFragment StoreEntitySet="TBL_CERTIFICATES">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="ORGANIZATION" ColumnName="ORGANIZATION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_COMMUNICATION">
+      <EntityTypeMapping TypeName="CvEntityModel.TBL_COMMUNICATION">
+        <MappingFragment StoreEntitySet="TBL_COMMUNICATION">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAMESURNAME" ColumnName="NAMESURNAME" />
+          <ScalarProperty Name="MAIL" ColumnName="MAIL" />
+          <ScalarProperty Name="MESSAGE" ColumnName="MESSAGE" />
+          <ScalarProperty Name="TOPIC" ColumnName="TOPIC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_ICON">
+      <EntityTypeMapping TypeName="CvEntityModel.TBL_ICON">
+        <MappingFragment StoreEntitySet="TBL_ICON">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ICON" ColumnName="ICON" />
+          <ScalarProperty Name="LINK" ColumnName="LINK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_MYWORKS">
+      <EntityTypeMapping TypeName="CvEntityModel.TBL_MYWORKS">
+        <MappingFragment StoreEntitySet="TBL_MYWORKS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IMAGE" ColumnName="IMAGE" />
+          <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_SKILS">
+      <EntityTypeMapping TypeName="CvEntityModel.TBL_SKILS">
+        <MappingFragment StoreEntitySet="TBL_SKILS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SKILS" ColumnName="SKILS" />
+          <ScalarProperty Name="DEGREE" ColumnName="DEGREE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

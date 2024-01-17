@@ -13,7 +13,7 @@ namespace CvEntitiyProject
         {
 
         }
-        CvEntityEntities db = new CvEntityEntities();
+        CvEntityEntities1 db = new CvEntityEntities1();
         protected void Button1_Click(object sender, EventArgs e)
         {
             TBL_SKILS s = new TBL_SKILS();

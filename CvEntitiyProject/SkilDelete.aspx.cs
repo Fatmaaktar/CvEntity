@@ -11,7 +11,7 @@ namespace CvEntitiyProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            CvEntityEntities db = new CvEntityEntities();
+            CvEntityEntities1 db = new CvEntityEntities1();
             int x = Convert.ToInt32(Request.QueryString["ID"]);
             var sd = db.TBL_SKILS.Find(x);
             db.TBL_SKILS.Remove(sd);

@@ -6,7 +6,7 @@
     </Key>
     <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="INFORMATIONS" Type="varchar" MaxLength="500" />
-    <Property Name="EDUCATİON" Type="varchar" MaxLength="500" />
+    <Property Name="EDUCATION" Type="varchar" MaxLength="500" />
     <Property Name="JOB" Type="varchar" MaxLength="1000" />
   </EntityType>
   <EntityType Name="TBL_ADDRESS">
@@ -15,11 +15,11 @@
     </Key>
     <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="TELEPHONE" Type="varchar" MaxLength="20" />
-    <Property Name="MAİL" Type="varchar" MaxLength="50" />
+    <Property Name="MAIL" Type="varchar" MaxLength="50" />
     <Property Name="ADDRESS" Type="varchar" MaxLength="50" />
     <Property Name="LOCASYON" Type="varchar" MaxLength="200" />
   </EntityType>
-  <EntityType Name="TBL_ADMİN">
+  <EntityType Name="TBL_ADMIN">
     <Key>
       <PropertyRef Name="ID" />
     </Key>
@@ -27,22 +27,40 @@
     <Property Name="UserName" Type="varchar" MaxLength="10" />
     <Property Name="Pasword" Type="varchar" MaxLength="10" />
   </EntityType>
-  <EntityType Name="TBL_COMMUNICATİON">
+  <EntityType Name="TBL_CERTIFICATES">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="ORGANIZATION" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TBL_COMMUNICATION">
     <Key>
       <PropertyRef Name="ID" />
     </Key>
     <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="NAMESURNAME" Type="varchar" MaxLength="50" />
-    <Property Name="MAİL" Type="varchar" MaxLength="50" />
+    <Property Name="MAIL" Type="varchar" MaxLength="50" />
     <Property Name="MESSAGE" Type="varchar" MaxLength="500" />
-    <Property Name="KONU" Type="varchar" MaxLength="50" />
+    <Property Name="TOPIC" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TBL_ICON">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ICON" Type="nvarchar(max)" />
+    <Property Name="LINK" Type="nvarchar(max)" />
   </EntityType>
   <EntityType Name="TBL_MYWORKS">
     <Key>
       <PropertyRef Name="ID" />
     </Key>
     <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="ADDRESS" Type="varchar" MaxLength="100" />
+    <Property Name="IMAGE" Type="nvarchar(max)" />
+    <Property Name="ADDRESS" Type="nvarchar(max)" />
+    <Property Name="NOTE" Type="nvarchar(max)" />
   </EntityType>
   <EntityType Name="TBL_SKILS">
     <Key>
@@ -55,8 +73,10 @@
   <EntityContainer Name="CvEntityModelStoreContainer">
     <EntitySet Name="TBL_ABOUT" EntityType="Self.TBL_ABOUT" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TBL_ADDRESS" EntityType="Self.TBL_ADDRESS" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="TBL_ADMİN" EntityType="Self.TBL_ADMİN" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="TBL_COMMUNICATİON" EntityType="Self.TBL_COMMUNICATİON" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_ADMIN" EntityType="Self.TBL_ADMIN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_CERTIFICATES" EntityType="Self.TBL_CERTIFICATES" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_COMMUNICATION" EntityType="Self.TBL_COMMUNICATION" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_ICON" EntityType="Self.TBL_ICON" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TBL_MYWORKS" EntityType="Self.TBL_MYWORKS" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TBL_SKILS" EntityType="Self.TBL_SKILS" Schema="dbo" store:Type="Tables" />
   </EntityContainer>

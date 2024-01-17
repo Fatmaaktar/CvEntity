@@ -16,7 +16,7 @@ namespace CvEntitiyProject
     {
         public int ID { get; set; }
         public string INFORMATIONS { get; set; }
-        public string EDUCATİON { get; set; }
+        public string EDUCATION { get; set; }
         public string JOB { get; set; }
     }
 }
